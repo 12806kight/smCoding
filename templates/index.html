@@ -1,0 +1,24 @@
+<!DOCTYPE html>  
+
+<html lang="en">
+<body>
+<table align="center">
+<tr align="center">
+    <td>Name:</td>
+    <td>Description: </td>
+    <td>Price: </td>
+    <td>Img: </td>
+    <td>review: </td>
+</tr>
+{% for row in dbhtml %}
+<tr>
+    <td>{{row[1]}}</td>
+    <td>{{row[2]}}</td>
+    <td>${{row[3]}}</td>
+    <td>{{row[4]}}</td>
+    <td>{{row[5]}}</td>
+</tr>
+{% endfor %}
+</table>
+</body>
+</html>
